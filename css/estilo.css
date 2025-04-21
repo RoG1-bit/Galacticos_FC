@@ -1,0 +1,119 @@
+header {
+    background: linear-gradient(90deg, #358f26, #002f6c);
+    color: white;
+  }
+  footer {
+    background-color: #002f6c;
+    color: white;
+  }
+
+/* Estilos para la navbar */
+.navbar {
+  background: linear-gradient(90deg , #0e2a55,#0e2a55) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffff !important;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.2rem;
+  color: #ffff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #358f26 ;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 { flex: 0 0 50%; max-width: 50%; }
+  }
+  @media (max-width: 576px) {
+    .col-md-4 { flex: 0 0 100%; max-width: 100%; }
+  }
+
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .social a {
+    color: #ffffff;  /* Cambio a blanco para mejor contraste */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #ffd700;  /* Dorado al hover, matching con otros elementos */
+}
+/* ======== Estilos para las pestañas ======== */
+
+/* Estilo base de todas las pestañas */
+.nav-tabs .nav-link {
+  color: #002f6c;
+  background-color: #002f6c; 
+  font-weight: 700;
+}
+
+/* Pestaña activa */
+.nav-tabs .nav-link.active {
+  background-color: #17181a;
+  color: #212529;
+  font-weight: bold;
+}
+
+
+header {
+    z-index: 1030;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    z-index: 1020;
+}
+
+body {
+    padding-top: 0;
+}
